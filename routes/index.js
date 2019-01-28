@@ -21,5 +21,10 @@ router.get('/user/:id', logStuff, function (req, res) {
   res.send('User Info')
 })
 
+router.get('/home', (req, res) => {
+    res.render('home',{
+        message : 'Welcome Home Dude !!'
+    })
+})
 
 module.exports = router;
