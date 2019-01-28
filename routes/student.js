@@ -14,11 +14,11 @@ router.get('/', function (req, res, next) {
 
 router.get('/create', function (req, res, next) {
 
-    res.send('Get respond with a  create resource of Student');
-
     modelControl.add(req, function (res_json) {
         //res_json.api = "R_44_001_a";
         //res.json(res_json);
+
+        res.send(res_json);
     });
 });
 
